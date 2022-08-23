@@ -16,8 +16,6 @@
 		57777BEB28B46B0F0047BC1B /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57777BEA28B46B0F0047BC1B /* MemoView.swift */; };
 		57E16CC528B382280025AE25 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E16CC428B382280025AE25 /* Tests_iOS.swift */; };
 		57E16CC728B382280025AE25 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E16CC628B382280025AE25 /* Tests_iOSLaunchTests.swift */; };
-		57E16CD128B382280025AE25 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E16CD028B382280025AE25 /* Tests_macOS.swift */; };
-		57E16CD328B382280025AE25 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E16CD228B382280025AE25 /* Tests_macOSLaunchTests.swift */; };
 		57E16CD428B382280025AE25 /* TCA_Architecture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57E16CA928B382230025AE25 /* TCA_Architecture.xcdatamodeld */; };
 		57E16CD528B382280025AE25 /* TCA_Architecture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57E16CA928B382230025AE25 /* TCA_Architecture.xcdatamodeld */; };
 		57E16CD628B382280025AE25 /* TCA_ArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E16CAB28B382230025AE25 /* TCA_ArchitectureApp.swift */; };
@@ -65,13 +63,10 @@
 		57E16CAE28B382280025AE25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57E16CB328B382280025AE25 /* TCA_Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCA_Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E16CB928B382280025AE25 /* TCA_Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCA_Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		57E16CBB28B382280025AE25 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		57E16CC028B382280025AE25 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E16CC428B382280025AE25 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		57E16CC628B382280025AE25 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		57E16CCC28B382280025AE25 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57E16CD028B382280025AE25 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		57E16CD228B382280025AE25 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		57E16CEF28B389780025AE25 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,9 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				57E16CA828B382230025AE25 /* Shared */,
-				57E16CBA28B382280025AE25 /* macOS */,
 				57E16CC328B382280025AE25 /* Tests iOS */,
-				57E16CCF28B382280025AE25 /* Tests macOS */,
 				57E16CB428B382280025AE25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -201,14 +194,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		57E16CBA28B382280025AE25 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				57E16CBB28B382280025AE25 /* macOS.entitlements */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
 		57E16CC328B382280025AE25 /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,15 +201,6 @@
 				57E16CC628B382280025AE25 /* Tests_iOSLaunchTests.swift */,
 			);
 			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		57E16CCF28B382280025AE25 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				57E16CD028B382280025AE25 /* Tests_macOS.swift */,
-				57E16CD228B382280025AE25 /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 		57E16D1628B461B40025AE25 /* view */ = {
@@ -452,8 +428,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57E16CD328B382280025AE25 /* Tests_macOSLaunchTests.swift in Sources */,
-				57E16CD128B382280025AE25 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
