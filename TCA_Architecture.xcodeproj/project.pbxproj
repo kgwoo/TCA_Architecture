@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57777BEB28B46B0F0047BC1B /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57777BEA28B46B0F0047BC1B /* MemoView.swift */; };
 		57E16CC528B382280025AE25 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E16CC428B382280025AE25 /* Tests_iOS.swift */; };
 		57E16CC728B382280025AE25 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E16CC628B382280025AE25 /* Tests_iOSLaunchTests.swift */; };
 		57E16CD128B382280025AE25 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E16CD028B382280025AE25 /* Tests_macOS.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57777BEA28B46B0F0047BC1B /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
 		57E16CAA28B382230025AE25 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		57E16CAB28B382230025AE25 /* TCA_ArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCA_ArchitectureApp.swift; sourceTree = "<group>"; };
 		57E16CAC28B382230025AE25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57777BE628B469770047BC1B /* actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		57777BE728B4697F0047BC1B /* reducers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = reducers;
+			sourceTree = "<group>";
+		};
+		57777BE828B46A1A0047BC1B /* store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = store;
+			sourceTree = "<group>";
+		};
+		57777BE928B46ADE0047BC1B /* memo */ = {
+			isa = PBXGroup;
+			children = (
+				57777BEA28B46B0F0047BC1B /* MemoView.swift */,
+			);
+			path = memo;
+			sourceTree = "<group>";
+		};
 		57E16CA328B382220025AE25 = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +139,13 @@
 		57E16CA828B382230025AE25 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				57E16D1628B461B40025AE25 /* view */,
+				57E16D1728B461BB0025AE25 /* model */,
 				57E16CAB28B382230025AE25 /* TCA_ArchitectureApp.swift */,
 				57E16CAC28B382230025AE25 /* ContentView.swift */,
 				57E16CAD28B382230025AE25 /* Persistence.swift */,
 				57E16CAE28B382280025AE25 /* Assets.xcassets */,
 				57E16CA928B382230025AE25 /* TCA_Architecture.xcdatamodeld */,
-				57E16CEF28B389780025AE25 /* RootView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -153,6 +185,25 @@
 				57E16CD228B382280025AE25 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		57E16D1628B461B40025AE25 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				57777BE928B46ADE0047BC1B /* memo */,
+				57E16CEF28B389780025AE25 /* RootView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		57E16D1728B461BB0025AE25 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				57777BE828B46A1A0047BC1B /* store */,
+				57777BE628B469770047BC1B /* actions */,
+				57777BE728B4697F0047BC1B /* reducers */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +374,7 @@
 				57E16CDA28B382280025AE25 /* Persistence.swift in Sources */,
 				57E16CD628B382280025AE25 /* TCA_ArchitectureApp.swift in Sources */,
 				57E16CD828B382280025AE25 /* ContentView.swift in Sources */,
+				57777BEB28B46B0F0047BC1B /* MemoView.swift in Sources */,
 				57E16CF028B389780025AE25 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
