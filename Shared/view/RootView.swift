@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct RootView: View {
+    let memoStore = Store(
+        initialState: MemoState(),
+        reducer: MemoReducer().reducer,
+        environment: MemoEnvironment(memoApi: MemoApi.live, mainQueue: .main))
+    
     var body: some View {
-        MemoView()
+        MemoView(store: memoStore)
     }
 }
 

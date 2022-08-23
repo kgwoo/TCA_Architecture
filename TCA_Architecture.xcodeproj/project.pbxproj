@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57357D4F28B493C900B78A6E /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57357D4E28B493C900B78A6E /* Memo.swift */; };
+		57357D5428B498FB00B78A6E /* MemoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57357D5328B498FB00B78A6E /* MemoState.swift */; };
+		57357D5628B49AD400B78A6E /* MemoActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57357D5528B49AD400B78A6E /* MemoActions.swift */; };
+		57357D5928B49C0F00B78A6E /* memoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57357D5828B49C0F00B78A6E /* memoApi.swift */; };
+		57357D5B28B49C5600B78A6E /* MemoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57357D5A28B49C5600B78A6E /* MemoEnvironment.swift */; };
+		57357D5D28B49CDA00B78A6E /* memoReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57357D5C28B49CDA00B78A6E /* memoReducer.swift */; };
 		57777BEB28B46B0F0047BC1B /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57777BEA28B46B0F0047BC1B /* MemoView.swift */; };
 		57E16CC528B382280025AE25 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E16CC428B382280025AE25 /* Tests_iOS.swift */; };
 		57E16CC728B382280025AE25 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E16CC628B382280025AE25 /* Tests_iOSLaunchTests.swift */; };
@@ -45,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57357D4E28B493C900B78A6E /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		57357D5328B498FB00B78A6E /* MemoState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoState.swift; sourceTree = "<group>"; };
+		57357D5528B49AD400B78A6E /* MemoActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoActions.swift; sourceTree = "<group>"; };
+		57357D5828B49C0F00B78A6E /* memoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoApi.swift; sourceTree = "<group>"; };
+		57357D5A28B49C5600B78A6E /* MemoEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoEnvironment.swift; sourceTree = "<group>"; };
+		57357D5C28B49CDA00B78A6E /* memoReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoReducer.swift; sourceTree = "<group>"; };
 		57777BEA28B46B0F0047BC1B /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
 		57E16CAA28B382230025AE25 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		57E16CAB28B382230025AE25 /* TCA_ArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCA_ArchitectureApp.swift; sourceTree = "<group>"; };
@@ -96,9 +108,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57357D4D28B493B900B78A6E /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				57357D4E28B493C900B78A6E /* Memo.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		57357D5028B4947E00B78A6E /* environment */ = {
+			isa = PBXGroup;
+			children = (
+				57357D5728B49BF600B78A6E /* memo */,
+			);
+			path = environment;
+			sourceTree = "<group>";
+		};
+		57357D5728B49BF600B78A6E /* memo */ = {
+			isa = PBXGroup;
+			children = (
+				57357D5828B49C0F00B78A6E /* memoApi.swift */,
+				57357D5A28B49C5600B78A6E /* MemoEnvironment.swift */,
+			);
+			path = memo;
+			sourceTree = "<group>";
+		};
 		57777BE628B469770047BC1B /* actions */ = {
 			isa = PBXGroup;
 			children = (
+				57357D5528B49AD400B78A6E /* MemoActions.swift */,
 			);
 			path = actions;
 			sourceTree = "<group>";
@@ -106,15 +144,17 @@
 		57777BE728B4697F0047BC1B /* reducers */ = {
 			isa = PBXGroup;
 			children = (
+				57357D5C28B49CDA00B78A6E /* memoReducer.swift */,
 			);
 			path = reducers;
 			sourceTree = "<group>";
 		};
-		57777BE828B46A1A0047BC1B /* store */ = {
+		57777BE828B46A1A0047BC1B /* state */ = {
 			isa = PBXGroup;
 			children = (
+				57357D5328B498FB00B78A6E /* MemoState.swift */,
 			);
-			path = store;
+			path = state;
 			sourceTree = "<group>";
 		};
 		57777BE928B46ADE0047BC1B /* memo */ = {
@@ -199,9 +239,11 @@
 		57E16D1728B461BB0025AE25 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				57777BE828B46A1A0047BC1B /* store */,
+				57777BE828B46A1A0047BC1B /* state */,
 				57777BE628B469770047BC1B /* actions */,
 				57777BE728B4697F0047BC1B /* reducers */,
+				57357D5028B4947E00B78A6E /* environment */,
+				57357D4D28B493B900B78A6E /* entity */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -370,11 +412,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57357D4F28B493C900B78A6E /* Memo.swift in Sources */,
 				57E16CD428B382280025AE25 /* TCA_Architecture.xcdatamodeld in Sources */,
 				57E16CDA28B382280025AE25 /* Persistence.swift in Sources */,
+				57357D5628B49AD400B78A6E /* MemoActions.swift in Sources */,
+				57357D5D28B49CDA00B78A6E /* memoReducer.swift in Sources */,
+				57357D5B28B49C5600B78A6E /* MemoEnvironment.swift in Sources */,
 				57E16CD628B382280025AE25 /* TCA_ArchitectureApp.swift in Sources */,
 				57E16CD828B382280025AE25 /* ContentView.swift in Sources */,
 				57777BEB28B46B0F0047BC1B /* MemoView.swift in Sources */,
+				57357D5928B49C0F00B78A6E /* memoApi.swift in Sources */,
+				57357D5428B498FB00B78A6E /* MemoState.swift in Sources */,
 				57E16CF028B389780025AE25 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
