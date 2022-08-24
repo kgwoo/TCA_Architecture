@@ -33,3 +33,21 @@
 
 ##### 참고 및 적용 
 https://github.com/pointfreeco/swift-composable-architecture
+
+## 3. MVI(model / view / intent)
+### a. 폴더 구조
+```
+[model]
+ - entity
+ - environment
+[view]
+ - widgets
+[intent]
+ - actions
+ - reducers
+ - state
+```
+
+### b. MVI 개념
+* View(Model(Intent()))
+
