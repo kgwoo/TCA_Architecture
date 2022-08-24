@@ -160,6 +160,16 @@
 			path = memo;
 			sourceTree = "<group>";
 		};
+		578A01C828B5A9E80039CD57 /* intent */ = {
+			isa = PBXGroup;
+			children = (
+				57777BE628B469770047BC1B /* actions */,
+				57777BE728B4697F0047BC1B /* reducers */,
+				57777BE828B46A1A0047BC1B /* state */,
+			);
+			path = intent;
+			sourceTree = "<group>";
+		};
 		57E16CA328B382220025AE25 = {
 			isa = PBXGroup;
 			children = (
@@ -172,8 +182,9 @@
 		57E16CA828B382230025AE25 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				57E16D1628B461B40025AE25 /* view */,
 				57E16D1728B461BB0025AE25 /* model */,
+				57E16D1628B461B40025AE25 /* view */,
+				578A01C828B5A9E80039CD57 /* intent */,
 				57E16CAB28B382230025AE25 /* TCA_ArchitectureApp.swift */,
 				57E16CAC28B382230025AE25 /* ContentView.swift */,
 				57E16CAD28B382230025AE25 /* Persistence.swift */,
@@ -215,11 +226,8 @@
 		57E16D1728B461BB0025AE25 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				57777BE828B46A1A0047BC1B /* state */,
-				57777BE628B469770047BC1B /* actions */,
-				57777BE728B4697F0047BC1B /* reducers */,
-				57357D5028B4947E00B78A6E /* environment */,
 				57357D4D28B493B900B78A6E /* entity */,
+				57357D5028B4947E00B78A6E /* environment */,
 			);
 			path = model;
 			sourceTree = "<group>";
