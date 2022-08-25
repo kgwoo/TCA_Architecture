@@ -15,9 +15,8 @@ struct MemoView: View {
         WithViewStore(self.store){ viewStore in
             List{
                 Section(header: VStack{
-                    Button("메모 목록 가져오기", action:{
-                        viewStore.send(.getMemoList)
-                    })
+                    Text("Memo List")
+                        .font(.system(size: 20))
                 }) {
                     ForEach(viewStore.state.memoList){ memo in
                         LazyVStack{
@@ -27,6 +26,9 @@ struct MemoView: View {
                 }
             }
             .listStyle(PlainListStyle())
+            .onAppear{
+                viewStore.send(.getMemoList)
+            }
             .overlay(
                 ZStack{
                     if viewStore.state.isLoading {
@@ -38,6 +40,7 @@ struct MemoView: View {
         }
     }
 }
+
 //
 //struct MemoView_Previews: PreviewProvider {
 //    static var previews: some View {
