@@ -48,6 +48,16 @@ https://github.com/pointfreeco/swift-composable-architecture
  - state
 ```
 
-### b. MVI 개념
-* View(Model(Intent()))
+### b. MVI 개념 요약
+```
+View(Model(Intent()))
+```
+
+* Model
+  * 앱의 데이터를 가지고 있는 불변객체
+* View
+  * Model로 받은 데이터를 가진 화면
+* Intent
+  * Intent() 가 실행되면서 새로운 상태를 가진 모델을 받음
+
 
